@@ -38,11 +38,16 @@ main {
 main > section {
   margin-top: 130px;
 }
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 /* -------------------------------header styles */
 
 /* navbar releted styles */
 .navbar {
   justify-content: space-between;
+  padding-top: 30px;
 }
 .nav-links {
   text-decoration: none;
@@ -75,6 +80,9 @@ main > section {
 .banner-titel {
   font-weight: 700;
   font-size: 4rem;
+}
+.banner-text {
+  margin: 20px 0px;
 }
 .banner-img {
   width: 100%;
@@ -112,6 +120,38 @@ main > section {
   color: #ff900e;
   font-size: 2.8rem;
   font-weight: 600;
+}
+
+/*-------------------------------- some facts style */
+.some-facts {
+  margin-bottom: 130px;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.facts-card {
+  border: 1px solid #ff990e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#facts-para {
+  margin: 25px 0px;
 }
 /*========================================================= resposnsive media querry */
 @media screen and (max-width: 576px) {
