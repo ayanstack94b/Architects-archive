@@ -31,6 +31,13 @@
   border: none;
   border-radius: 4px;
 }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
 /* -------------------------------header styles */
 
 /* navbar releted styles */
@@ -46,7 +53,9 @@
   list-style: none;
   margin-right: 30px;
 }
-
+.nav-item > a {
+  text-decoration: none;
+}
 .navbar,
 .banner {
   max-width: 1440px;
@@ -70,4 +79,55 @@
 .banner-img {
   width: 100%;
 }
-/* resposnsive media querry */
+/* -------------------------------- features section */
+.teams {
+  align-items: center;
+  gap: 20px;
+}
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+.features-description {
+  margin: 15px 0;
+  color: #727272;
+  font-size: small;
+}
+#quick-list {
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+#our {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+#feature {
+  color: #ff900e;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+/*========================================================= resposnsive media querry */
+@media screen and (max-width: 576px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .our-features {
+    margin: 50px auto;
+  }
+}
